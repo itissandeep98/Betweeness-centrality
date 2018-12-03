@@ -205,13 +205,3 @@ class Graph(object):
         for i in top:
             s+=str(i)+', '
         return "k= "+str(len(top))+", SBC= "+str(SBC)+", Top "+str(len(top))+" Nodes are : "+s[:-2]
-
-if __name__ == "__main__":
-    vertices = [1, 2, 3, 4, 5, 6]
-    edges    = [(1, 2), (1, 5), (2, 3), (2, 5), (3, 4),(3,6), (4, 5), (4, 6)]
-    graph = Graph(vertices, edges)
-    print(graph)
-    vertices = [1, 2, 3, 4, 5, 6,7]
-    edges    = [(1, 3), (2, 3), (3, 4), (4, 5), (5,6),(5,7),(6,7)]
-    graph1=Graph(vertices,edges)
-    print(graph1)
